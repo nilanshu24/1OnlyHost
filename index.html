@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tai">
+  <title>1 Only Host</title>
+</head>
+<body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #000;
+    color: #FFF;
+    font-size: 62.5%;
+    font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    color: #e95846;
+    text-decoration: none;
+  }
+
+  .pricing-table-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.6em;
+    color: #FFF;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .pricing-table-title a {
+    font-size: 0.6em;
+  }
+
+  .clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+  }
+
+  /** ========================
+   * Contenedor
+   ============================*/
+  .pricing-wrapper {
+    width: 960px;
+    margin: 40px auto 0;
+  }
+
+  .pricing-table {
+    margin: 0 10px;
+    text-align: center;
+    width: 300px;
+    float: left;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+
+  .pricing-table:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+  }
+
+  .pricing-title {
+    color: #FFF;
+    background: #e95846;
+    padding: 20px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .pricing-table.recommended .pricing-title {
+    background: #2db3cb;
+  }
+
+  .pricing-table.recommended .pricing-action {
+    background: #2db3cb;
+  }
+
+  .pricing-table .price {
+    background: #403e3d;
+    font-size: 3.4em;
+    font-weight: 700;
+    padding: 20px 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .pricing-table .price sup {
+    font-size: 0.4em;
+    position: relative;
+    left: 5px;
+  }
+
+  .table-list {
+    background: #FFF;
+    color: #403d3a;
+  }
+
+  .table-list li {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 12px 8px;
+  }
+
+  .table-list li:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #3fab91;
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    font-size: 16px;
+  }
+
+  .table-list li span {
+    font-weight: 400;
+  }
+
+  .table-list li span.unlimited {
+    color: #FFF;
+    background: #e95846;
+    font-size: 0.9em;
+    padding: 5px 7px;
+    display: inline-block;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+  }
+
+
+  .table-list li:nth-child(2n) {
+    background: #F0F0F0;
+  }
+
+  .table-buy {
+    background: #FFF;
+    padding: 15px;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .table-buy p {
+    float: left;
+    color: #37353a;
+    font-weight: 700;
+    font-size: 2.4em;
+  }
+
+  .table-buy p sup {
+    font-size: 0.5em;
+    position: relative;
+    left: 5px;
+  }
+
+  .table-buy .pricing-action {
+    float: right;
+    color: #FFF;
+    background: #e95846;
+    padding: 10px 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+
+  .table-buy .pricing-action:hover {
+    background: #cf4f3e;
+  }
+
+  .recommended .table-buy .pricing-action:hover {
+    background: #228799;
+  }
+
+  /** ================
+   * Responsive
+   ===================*/
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .pricing-wrapper {
+      width: 768px;
+    }
+
+    .pricing-table {
+      width: 236px;
+    }
+
+    .table-list li {
+      font-size: 1.3em;
+    }
+
+  }
+
+  @media only screen and (max-width: 767px) {
+    .pricing-wrapper {
+      width: 420px;
+    }
+
+    .pricing-table {
+      display: block;
+      float: none;
+      margin: 0 0 20px 0;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 479px) {
+    .pricing-wrapper {
+      width: 300px;
+    }
+  }
+
+  .site-footer {
+    background-color: #000;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    border-top: 0.5px solid white;
+  }
+
+  .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+  }
+
+  .site-footer hr.small {
+    margin: 20px 0
+  }
+
+  .site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+  }
+
+  .site-footer a {
+    color: #737373;
+  }
+
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+
+  .footer-links {
+    padding-left: 0;
+    list-style: none
+  }
+
+  .footer-links li {
+    display: block
+  }
+
+  .footer-links a {
+    color: #737373
+  }
+
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+
+  .footer-links.inline li {
+    display: inline-block
+  }
+
+  .site-footer .social-icons {
+    text-align: right
+  }
+
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+  }
+
+  .copyright-text {
+    margin: 0
+  }
+
+  @media (max-width:991px) {
+    .site-footer [class^=col-] {
+      margin-bottom: 30px
+    }
+  }
+
+  @media (max-width:767px) {
+    .site-footer {
+      padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center
+    }
+  }
+
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+  }
+
+  .social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+  }
+
+  .social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+  }
+
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+  }
+
+  .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+  }
+
+  .social-icons a.facebook:hover {
+    background-color: #3b5998
+  }
+
+  .social-icons a.twitter:hover {
+    background-color: #00aced
+  }
+
+  .social-icons a.linkedin:hover {
+    background-color: #007bb6
+  }
+
+  .social-icons a.dribbble:hover {
+    background-color: #ea4c89
+  }
+
+  @media (max-width:767px) {
+    .social-icons li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600
+    }
+  }
+</style>
+
+
+<div class="site-mobile-menu">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close mt-3">
+      <span class="icon-close2 js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<header class="site-navbar" role="banner">
+
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-11 col-xl-2">
+        <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">1OnlyHost</a></h1>
+      </div>
+      <div class="col-12 col-md-10 d-none d-xl-block">
+        <nav class="site-navigation position-relative text-right" role="navigation">
+
+          <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+            <li class="active"><a href="index.html"><span>Home</span></a></li>
+            <li><a href="#aboutus1"><span>About</span></a></li>
+            <li><a href="#services1"><span>Services</span></a></li>
+            <li class="has-children">
+              <a href="#contact1"><span>Contact Us</span></a>
+              <ul class="dropdown arrow-top">
+                <li><a href="mailto: nilanshuhedaoo@gmail.com">Email</a></li>
+                <li><a href="https://www.1onlyhost.com">Website</a></li>
+                <li><a href="#">Call us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+          class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+    </div>
+
+  </div>
+  </div>
+
+</header>
+<div class="hero" style="background-image: url('images/hero_1.jpg');"></div>
+
+
+<div class="row" id="aboutus1">
+  <div class="col-md-4 col-sm-12 col-xl-4">
+    <img src="images/OK.png" alt=""
+      style="margin-top: 40px; border-radius: 100%; height: 270px; width: 270px; float: right; border: solid 1px #fff; padding: 3px;">
+  </div>
+  <div class="col-md-8 col-sm-12 col-xl-8" style="font-family: 'Raleway', sans-serif;">
+    <h2 style="font-family: 'Raleway', sans-serif; text-justify: auto; margin-left: 50px; margin-right: 200px;">About Us
+    </h2>
+    <hr align="left" width="650px" color="white" style="margin-left: 50px;">
+    <h5 style="font-family: 'Raleway', sans-serif; text-justify: auto; margin-left: 50px; margin-right: 200px;">We are
+      Intended to Provide Cheapest, Fastest and Secure Web Hosting, Reseller Hosting and Secure Servers. Our Main Moto
+      is to Support our Customer in Easy and Effective Manner for their Website Hosting Need.
+      Get Started with our Hosting at Just RS49.<br><br> We have Good Record in Maintaining Uptime of our Servers and,
+      we Bet that, you will Never come to us by taking complaint of Downtime. <br><br> With SSD Fecility and 100%
+      Speedest Network Based Servers, we can Assure that, You will never be disappointed</h5>
+  </div>
+</div>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+
+
+<h2 id="services1" align="center" style="font-family: 'Raleway', sans-serif; text-justify: auto; margin-right: 40px;">Hosting Services
+</h2>
+<hr align="center" width="970px" color="white" style="margin-left: 240px;">
+
+<!-- Contenedor -->
+<div class="pricing-wrapper clearfix">
+  <!-- Titulo -->
+
+  <div class="row">
+    <div class="pricing-table">
+      <h3 class="pricing-title">Shared Hosting</h3>
+      <div class="price">Rs.49<sup>/ month</sup></div>
+      <!-- Lista de Caracteristicas / Propiedades -->
+      <ul class="table-list">
+        <li>99% <span>Uptime Guarantee</span></li>
+        <li><span>Cpanel Control panel for management</span></li>
+        <li><span>Softaculous 300+Apps Installer</span></li>
+        <li>Free <span class="unlimited">Imunify 360 Malware Scanner</span></li>
+        <li>1GB <span class="unlimited">SSD Disk Space</span></li>
+        <li>10GB <span>Pure 1GBPS Speedest Bandwidth</span></li>
+      </ul>
+      <!-- Contratar / Comprar -->
+      <div class="table-buy">
+        <p>Rs.49<sup>/ month</sup></p>
+        <a href="#" class="pricing-action">Order Now</a>
+      </div>
+    </div>
+
+    <div class="pricing-table recommended">
+      <h3 class="pricing-title">Reseller Hosting</h3>
+      <div class="price">Rs.500<sup>/ month</sup></div>
+      <!-- Lista de Caracteristicas / Propiedades -->
+      <ul class="table-list">
+        <li>100GB <span>SSD Disk Space</span></li>
+        <li>Unlimited <span>Bandwith</span></li>
+        <li>5Cpanel <span>Control Panel Accounts</span></li>
+        <li>Free <span class="unlimited">Softaculous App Installer</span></li>
+        <li> <span class="unlimited">Free SSL for All the customers</span></li>
+        <li>99.9% <span>Uptime</span></li>
+      </ul>
+      <!-- Contratar / Comprar -->
+      <div class="table-buy">
+        <p>Rs.500<sup>/ month</sup></p>
+        <a href="#" class="pricing-action">Order Now</a>
+      </div>
+    </div>
+
+    <div class="pricing-table">
+      <h3 class="pricing-title">VPS Servers</h3>
+      <div class="price">Rs.1499<sup>/ month</sup></div>
+      <!-- Lista de Caracteristicas / Propiedades -->
+      <ul class="table-list">
+        <li>100% <span>Quality</span></li>
+        <li>8GB <span>RAM</span></li>
+        <li>200 GB <span>SSD</span></li>
+        <li>Unlimited <span class="unlimited">Bandwidth</span></li>
+        <li>Free <span class="unlimited">DDOS Protection</span></li>
+        <li>Root Access <span></span></li>
+      </ul>
+      <!-- Contratar / Comprar -->
+      <div class="table-buy">
+        <p>Rs.1499<sup>/ month</sup></p>
+        <a href="#" class="pricing-action">Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br>
+<!-- Site footer -->
+<footer class="site-footer" id="contact1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify" style="padding-right: 20px;">Our Servers are equipped with 100% fastest networks, which are promissed to keep our customer Stay Running with their website Faster 100% for sure. Our servers are ready to serve our customers with Powerful Control Panels like Plesk, Cpanel, Direct Admin ETC which Supports nearly all of the softwares. We can transfer your web hosting free of cost to our platform, when you buy an hosting plan from us Without 0 Question Asked!</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3 " >
+        <h6>Hosting Services</h6>
+        <ul class="footer-links">
+          <li><a href="">Shared Web Hosting</a></li>
+          <li><a href=""> Reseller Web Hosting</a></li>
+          <li><a href="">VPS Servers</a></li>
+          <li><a href="">Dedicated Servers</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Contribute</a></li>
+          <li><a href="">Privacy Policy</a></li>
+         
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved 
+          <a href="#"></a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a href="#"><img height="43px" src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-512.png" alt=""></a></li>
+          <li><a href="#"><img height="43px" src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-512.png" alt=""></a></li>
+          <li><a href="#"><img height="43px" src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-512.png" alt=""></a></li>
+          <li><a href="#"><img height="43px" src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Youtube3_svg-512.png" alt=""></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
